@@ -1,13 +1,13 @@
 pico-8 cartridge // http://www.pico-8.com
 version 38
 __lua__
-x=0y=0z=4a=.3g=0h=64v=.2q=127w=16p=poke2
-p(24405,0)☉=camera
+x=0y=24405z=4a=.3g=0h=64v=.2q=127w=16p=poke2
+p(y,0)☉=camera
 for i=0,512 do
 circfill(i%q,rnd(q),w,i%2)mset(i%w,i/w,i)
 end
 pal({2})spr(0,2,2,w,w)
-p(24405,96)
+p(y,96)
 p(24376,4112)
 ::_::
 b=btn()
