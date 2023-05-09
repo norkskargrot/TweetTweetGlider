@@ -8,7 +8,7 @@ circfill(i%q,rnd(q),w,i%2)mset(i%w,i/w,i)
 end
 pal({2})spr(0,2,2,w,w)
 p(y,96)
-p(24376,4112)
+p(y-29,4112)
 ::_::
 b=btn()
 g+=v*((b&2)/2-(b&1))>>9
@@ -21,7 +21,6 @@ v-=j/40
 s=sin(a)c=cos(a)
 x-=s*v
 y-=c*v
-h+=(b&w)/w-(b&32)/32
 k=z
 cls(12)
 pal({7,6})
