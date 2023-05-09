@@ -30,8 +30,8 @@ p=k/(h-i)*32tline(0,i,q,i,x-p*c-p*s,y+p*s-p*c,p*c>>6,-p*s>>6)
 end
 l=g*999
 ☉(l-64,j*w-80)
-line(w,l,-w,-l,8)
 ?"\b⬆️",14
+line(w,l,-w,-l,8)
 ?"¥",-2-l,j*9
 ☉()if(z>w)run()
 flip()goto _
