@@ -33,10 +33,10 @@ m=p*s
 n=p*c
 tline(0,i,q,i,x-n-m,y+m-n,n>>6,-m>>6)
 end
-☉(g*999-64,j*w-80)
-l=w*cos(g*w)k=w*sin(g*w)
-line(l,-k,-l,k,8)
-?"⬆️\b◆",-3,-3,14
-?"¥",-1-g*999,j*9
+l=g*999
+☉(l-64,j*w-80)
+line(w,l,-w,-l,8)
+?"⬆️",-3,-3,14
+?"¥",-1-l,j*9
 ☉()if(z>w or v<0)run()
 flip()goto _
