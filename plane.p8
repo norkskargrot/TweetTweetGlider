@@ -27,10 +27,7 @@ cls(12)
 pal({7,6})
 for i=0,q do
 if(i==h)pal({9,3})k-=w
-p=k/(h-i)*32
-m=p*s
-n=p*c
-tline(0,i,q,i,x-n-m,y+m-n,n>>6,-m>>6)
+p=k/(h-i)*32tline(0,i,q,i,x-p*c-p*s,y+p*s-p*c,p*c>>6,-p*s>>6)
 end
 l=g*999
 ☉(l-64,j*w-80)
