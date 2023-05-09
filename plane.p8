@@ -3,8 +3,8 @@ version 38
 __lua__
 x=0y=0z=4a=.3g=0h=64v=.2q=127w=16p=poke2
 p(24405,0)☉=camera
-for i=0,256 do
-circfill(rnd(q),rnd(q),w,i%2)mset(i%w,i/w,i)
+for i=0,512 do
+circfill(i%q,rnd(q),w,i%2)mset(i%w,i/w,i)
 end
 pal({2})spr(0,2,2,w,w)
 p(24405,96)
@@ -35,7 +35,7 @@ end
 l=g*999
 ☉(l-64,j*w-80)
 line(w,l,-w,-l,8)
-?"⬆️",-3,-3,14
-?"¥",-1-l,j*9
+?"\b⬆️",14
+?"¥",-2-l,j*9
 ☉()if(z>w)run()
 flip()goto _
