@@ -1,11 +1,10 @@
 pico-8 cartridge // http://www.pico-8.com
 version 38
 __lua__
-x=0y=0z=4a=.3g=0h=64v=.2r=rnd
-q=127w=16p=poke2
+x=0y=0z=4a=.3g=0h=64v=.2q=127w=16p=poke2
 p(24405,0)☉=camera
 for i=0,256 do
-circfill(r(q),r(q),r(w),r(2))mset(i%w,i/w,i)
+circfill(rnd(q),rnd(q),w,i%2)mset(i%w,i/w,i)
 end
 pal({2})spr(0,2,2,w,w)
 p(24405,96)
@@ -38,5 +37,5 @@ l=g*999
 line(w,l,-w,-l,8)
 ?"⬆️",-3,-3,14
 ?"¥",-1-l,j*9
-☉()if(z>w or v<0)run()
+☉()if(z>w)run()
 flip()goto _
